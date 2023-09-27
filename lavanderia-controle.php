@@ -4,13 +4,13 @@ include("conectar.php");
 
 <?php
 function inserirCliente($conexao,$nome,$email,$telefone){
-    $query("INSERT INTO cliente(nome,email,telefone) values('{$nome}','{$mail}','{$telefone}'");
+    $query="INSERT INTO cliente(nome,email,telefone) values('{$nome}','{$email}','{$telefone}')";
     return mysqli_query($conexao,$query);
 
 }
-function listaCliente(){
+function listaCliente($conexao){
     $clientes=array();
-    $resultado=mysqli_query=($conexao,"SELECT * FROM  cliente;");
+    $resultado=mysqli_query($conexao,"SELECT * FROM  cliente");
     while($cliente=mysqli_fetch_assoc($resultado)){
         array_push($clientes,$cliente);
     }
@@ -18,11 +18,11 @@ function listaCliente(){
 }
 
 function removeCliente($conexao,$id){
-    $query=($conexao,"DELETE FROM cliente WHERE id=$id");
+    $query=("DELETE FROM cliente WHERE id={$id}");
     return mysqli_query($conexao,$query);
 }
 function alteraCliente($conexao,$id,$nome,$email,$telefone){
-    $query=($conexao,"UPDATE cliente SET nome='{$nome}',email='{$email}',telefone='{$telefone}' WHERE id=$id");
+    $query=("UPDATE cliente SET nome='{$nome}',email='{$email}',telefone='{$telefone}' WHERE id={$id}");
     return mysqli_query($conexao,$query);
 }
 ?>

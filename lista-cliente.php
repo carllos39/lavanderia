@@ -2,8 +2,24 @@
 include("conectar.php");
 include("lavanderia-controle.php");
 ?>
-
-<table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Cliente</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="formulario-de-cadastro.html">Cadastrar cliente</a></li>
+                <li><a href="formulario-altera.html"> Alterar Cliente</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Lista de Cliente</h1>
+<table border="1">
     <tr>
     <th>Id</th>
     <th>Nome</th>
@@ -11,7 +27,7 @@ include("lavanderia-controle.php");
     <th>Telefone</th>
     <th>Ação</th>
     </tr>
-    <?php clientes=listaCliente($conexao);
+    <?php $clientes=listaCliente($conexao);
     foreach( $clientes as $cliente){
     ?>
     <tr>
@@ -25,3 +41,5 @@ include("lavanderia-controle.php");
     }
     ?>
 </table>
+</body>
+</html>

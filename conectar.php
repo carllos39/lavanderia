@@ -1,3 +1,3 @@
 <?php 
-$connect=mysqli_connect('localhost','root','','lavanderiadb');
+$conexao=mysqli_connect('localhost','root','','lavanderiadb');
 ?>

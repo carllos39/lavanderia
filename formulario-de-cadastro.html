@@ -8,8 +8,16 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="lista-cliente.php">Lista de cliente</a></li>
+                <li><a href="formulario-altera.html"> Alterar Cliente</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1>Cadastro de Cliente</h1>
-    <form action="">
+    <form action="cadastrar-cliente.php" method="post">
         <p>
             <label for="">Nome do Cliente :</label>
             <input type="text" name="nome">
@@ -19,7 +27,7 @@
             <input type="text" name="email">
         </p>
         <label for="">Telefone do Cliente:</label>
-        <input type="text" name="email">
+        <input type="text" name="telefone">
         </p>
         <p>
             <input type="submit" value="Cadastrar">
