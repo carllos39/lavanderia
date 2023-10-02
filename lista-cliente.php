@@ -8,15 +8,21 @@ include("lavanderia-controle.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar Cliente</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="formulario-de-cadastro.html">Cadastrar cliente</a></li>
-                <li><a href="formulario-altera.html"> Alterar Cliente</a></li>
-            </ul>
-        </nav>
+<header>
+        <div class="limitador">
+            <h1><a href="">Nossa Lavanderia Aliada</a></h1>
+            <nav>
+                <h2><a href="">Menu &equiv;</a></h2>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="lista-cliente.php">Lista de Clientes</a></li>
+                    <li><a href="formulario-altera.html">Alterar Cliente</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <h1>Lista de Cliente</h1>
 <table border="1">
