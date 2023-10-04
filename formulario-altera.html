@@ -24,19 +24,19 @@
     <h1>Cadastro de Cliente</h1>
     <form action="alteraCliente.php" method="post">
         <p>
-            <label for="">Alterar Cliente :</label>
+            <label for="id">Alterar Cliente :</label>
             <input type="text" name="id" size="5">
         </p>
         <p>
-            <label for="">Nome do Cliente :</label>
-            <input type="text" name="nome">
+            <label for="name">Nome do Cliente :</label>
+            <input type="text" name="nome" id="name">
         </p>
         <p>
-            <label for="">Email do Cliente:</label>
-            <input type="text" name="email">
+            <label for="email">E-mail do Cliente:</label>
+            <input type="email" name="email" id="email">
         </p>
-        <label for="">Telefone do Cliente:</label>
-        <input type="text" name="telefone">
+        <label for="telefone">Telefone do Cliente:</label>
+        <input type="tel" name="telefone" id="telefone">
         </p>
         <p>
             <input type="submit" value="Cadastrar">
