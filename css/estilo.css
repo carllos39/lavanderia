@@ -8,6 +8,10 @@ ul{
 width: 95vw;
 margin: auto;
 }
+h1{
+    background-color: black;
+    border: 1px dotted red;
+}
 
 @media screen and (min-width:570px) {
     nav h2{
