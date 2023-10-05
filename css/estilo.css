@@ -5,14 +5,20 @@ ul{
 
 
 .limitador{
-width: 95vw;
+width: 100%;
 margin: auto;
 }
-h1{
+h1 {
     background-color: black;
     border: 1px dotted red;
+    
 }
-
+h1 a{
+    color: white;
+}
+body{
+    background-image: url(../imagem/IMG-20230910-WA0002.png);
+}
 @media screen and (min-width:570px) {
     nav h2{
         display: none;
@@ -20,11 +26,18 @@ h1{
      .menu {
         display: flex;
         justify-content: space-between;
-        width: 50%;
-        
-    
+        width: 50%; 
+
     }
-    
+    .menu a{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+    h3{
+        color: white;
+    }
 
   
 
