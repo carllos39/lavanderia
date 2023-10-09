@@ -13,9 +13,9 @@ include("lavanderia-controle.php");
 <body>
 <header>
         <div class="limitador">
-            <h1><a href="">Nossa Lavanderia Aliada</a></h1>
+            <h1>Nossa Lavanderia Aliada</h1>
             <nav>
-                <h2><a href="">Menu &equiv;</a></h2>
+            <h2><a href="">Menu &equiv;</a></h2>
                 <ul class="menu">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="lista-cliente.php">Lista de Clientes</a></li>
