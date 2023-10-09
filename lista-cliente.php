@@ -12,7 +12,7 @@ include("lavanderia-controle.php");
 </head>
 <body>
 <header>
-        <div class="limitador">
+        
             <h1>Nossa Lavanderia Aliada</h1>
             <nav>
             <h2><a href="">Menu &equiv;</a></h2>
@@ -22,7 +22,7 @@ include("lavanderia-controle.php");
                     <li><a href="formulario-altera.html">Alterar Cliente</a></li>
                 </ul>
             </nav>
-        </div>
+        
     </header>
     <h1>Lista de Cliente</h1>
 <table border="1">
