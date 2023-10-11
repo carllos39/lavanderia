@@ -47,5 +47,8 @@ include("lavanderia-controle.php");
     }
     ?>
 </table>
+<footer>
+        <p>Nossa Lavanderia Aliada &copy;</p>
+    </footer>
 </body>
 </html>
