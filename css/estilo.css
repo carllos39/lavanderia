@@ -1,19 +1,27 @@
 *{box-sizing: border-box;}
+html{
+    font-size: 16px;
+}
 header{
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+header{
+position: sticky;
+top: 0%;
 }
 nav h2 a{
     font-size: 18px;
     padding: 16px;
     display: inline-block;
 }
+a{text-decoration: none;}
 ul{
     list-style: none;
 }
 .menu{
-    align-items: center;
+    align-items:center ;
     padding: 10px;
     
 }
