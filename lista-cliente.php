@@ -50,5 +50,6 @@ include("lavanderia-controle.php");
 <footer>
         <p>Nossa Lavanderia Aliada &copy;</p>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>
