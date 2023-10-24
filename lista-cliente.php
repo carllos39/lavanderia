@@ -48,7 +48,7 @@ include("lavanderia-controle.php");
     ?>
 </table>
 <footer>
-        <p>Nossa Lavanderia Aliada &copy;</p>
+        <p>Lavanderia Aliada &copy;</p>
     </footer>
     <script src="js/menu.js"></script>
 </body>
