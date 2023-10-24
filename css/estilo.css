@@ -1,33 +1,77 @@
 *{box-sizing: border-box;}
+
+:root{
+    --cor-titulo:#4d4d4d;
+    --cor-texto:#333;
+    --cor-escura:#000;
+    --cor-clara:#fff;
+    --cor-intermediaria:#ececec;
+    
+
+}
 html{
     font-size: 16px;
 }
-header{
+body{
+    color: var(--cor-texto);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--cor-clara);
+}
+body,h1,h2,p,figure,.menu{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1rem;
+    
+}
+h1 a{
+    color:var(--cor-clara);
+    background-color: var(--cor-escura);
+    padding: 0.3rem;
+    border-radius: 4px;
+
+}
+header .limitador{
    display: flex;
-   justify-content: space-between;
+   justify-content:space-between;
    align-items: center;
+   height: 12vh;
 }
 header{
 position: sticky;
 top: 0%;
+background-color: var(--cor-clara);
 }
 nav h2 a{
+    color: var(--cor-escura);
     font-size: 18px;
     padding: 16px;
-    display: inline-block;
+    display:inline-block;
 }
 a{text-decoration: none;}
-ul{
+
+nav h2 a .menu:hover,nav h2 a .menu{
+    background-color: var(--cor-intermediaria);
+}
+.menu{
     list-style: none;
-}
-.menu{
-    align-items:center ;
-    padding: 10px;
-    
-}
-.menu{
     display: none;
 }
+
+.menu a{
+    color: var(--cor-clara);
+    background-color: #000;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    }
+
 .menu.aberto{
  display: flex;   
  flex-direction: column;
@@ -35,34 +79,36 @@ ul{
  left: 0;
  right: 0;
 }
-h1{
-    font-size: 20px;
-    background-color: black;
-    color: white;
+.limitador{
+    width: 95vw;
+    margin: auto;
 }
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url();
+
+footer{
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
 }
-h2 a{
-    color: black;
-    font-size: 18px;
+.terceira img{
+width: 100%;
 }
-@media (min-width:570px) {
-    header h2 a {
+
+@media  (min-width:570px) {
+     nav h2{
         display:none;
     }
-
     .menu{
-        display:flex;
-        justify-content: space-between;
-        align-items:center;
-        width: 70%;
-        background-color: black;
-        
+    display: flex;  
+    justify-content: space-between;
+         
     }
-    .menu a{
-        color: white;
+    nav{
+        width: 70%;
         
     }
 

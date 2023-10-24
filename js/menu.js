@@ -1,7 +1,7 @@
 "use strict";
 const botaoMenu=document.querySelector("nav h2");
 const menu=document.querySelector(".menu");
-const textoBotao=document.querySelector("a");
+const textoBotao=botaoMenu.querySelector("a");
 
 botaoMenu.addEventListener("click",function(event){
     event.preventDefault();
