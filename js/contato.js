@@ -1,4 +1,4 @@
-"use struct";
+"use strict";
 const formulario=document.querySelector("form");
 const campoCep=formulario.querySelector("#cep");
 const campoEndereco=formulario.querySelector("#endereco");
