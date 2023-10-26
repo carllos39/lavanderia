@@ -17,7 +17,7 @@ event.preventDefault();
 let cep;
 
 if(campoCep.value.length !==9){
-mensagem.textContent="Digite um cep v√°lido!";
+mensagem.textContent="Digite um cep v·lido!";
 mensagem.style.color="purple";
 return;
 }else{
@@ -32,7 +32,8 @@ if("erro" in dados){
     mensagem.style.color="red";
 }else{
     mensagem.textContent="Cep encontrado!";
-    mensagem.style.color="green";  
+    mensagem.style.color="green";
+  
     campoEndereco.value=dados.logradouro;
     campoBairro.value=dados.bairro;
     campoCidade.value=dados.localidade;
