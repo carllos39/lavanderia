@@ -17,15 +17,15 @@ event.preventDefault();
 let cep;
 
 if(campoCep.value.length !==9){
-mensagem.textContent="Digite um cep v·lido!";
-mensagem.style.color="purple";
+mensagem.textContent = "Digite um cep v√°lido!";
+mensagem.style.color = "purple";
 return;
 }else{
 cep=campoCep.value;
 }
 const url=`http://viacep.com.br/ws/${cep}/json/`;
-const resposta=await fetch(url);
-const dados=await resposta.json();
+const resposta = await fetch(url);
+const dados = await resposta.json();
 
 if("erro" in dados){
     mensagem.textContent="Cep inexistente!";
