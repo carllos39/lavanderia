@@ -142,7 +142,7 @@ button:hover,button:focus{
 
 
 @media  (min-width:570px) {
-     nav h2{
+      h2{
         display:none;
     }
     .menu{
@@ -155,6 +155,9 @@ button:hover,button:focus{
         
     }
    nav h2 a{align-items: center;}
+   h3{
+    text-align: center;
+   }
 
   }
 
