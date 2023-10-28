@@ -30,7 +30,15 @@ include("lavanderia-controle.php");
     <th>Id</th>
     <th>Nome</th>
     <th>Email</th>
+    <th>Data de Nascimento</th>
+    <th>Cep</th>
+    <th>Endereço</th>
+    <th>Bairro</th>
+    <th>Cidade</th>
+    <th>Estado</th>
     <th>Telefone</th>
+    <th>Assunto</th>
+    <th>Mensagem</th>
     <th>Ação</th>
     </tr>
     <?php $clientes=listaCliente($conexao);
@@ -40,7 +48,15 @@ include("lavanderia-controle.php");
         <td><?=$cliente['id'] ?></td>
         <td><?=$cliente['nome'] ?></td>
         <td><?=$cliente['email'] ?></td>
+        <td><?=$cliente['dataNascimento'] ?></td>
+        <td><?=$cliente['cep'] ?></td>
+        <td><?=$cliente['endereco'] ?></td>
+        <td><?=$cliente['bairro'] ?></td>
+        <td><?=$cliente['cidade'] ?></td>
+        <td><?=$cliente['estado'] ?></td>
         <td><?=$cliente['telefone'] ?></td>
+        <td><?=$cliente['assunto'] ?></td>
+        <td><?=$cliente['mensagem'] ?></td>
         <td><a href="removeCliente.php? id=<?=$cliente['id']?>">Remover</a></td>
     </tr>
     <?php 

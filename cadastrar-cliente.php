@@ -6,8 +6,16 @@ include("lavanderia-controle.php");
 <?php 
 $nome=$_POST['nome'];
 $email=$_POST['email'];
+$dataNascimento=$_POST['dataNascimento'];
+$cep=$_POST['cep'];
+$endereco=$_POST['endereco'];
+$bairro=$_POST['bairro'];
+$cidade=$_POST['cidade'];
+$estado=$_POST['estado'];
 $telefone=$_POST['telefone'];
-if(inserirCliente($conexao,$nome,$email,$telefone)){
+$assunto=$_POST['assunto'];
+$mensagem=$_POST['mensagem'];
+if(inserirCliente($conexao,$nome,$email,$dataNascimento,$cep,$endereco,$bairro,$cidade,$estado,$telefone,$assunto,$mensagem)){
     echo"Cadastrado com sucesso!";
 }else{
     echo"Não cadastrou!";
