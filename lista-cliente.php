@@ -48,7 +48,7 @@ include("lavanderia-controle.php");
         <td><?=$cliente['id'] ?></td>
         <td><?=$cliente['nome'] ?></td>
         <td><?=$cliente['email'] ?></td>
-        <td><?=$cliente['dataNascimento'] ?></td>
+        <td><?=$cliente['nascimento'] ?></td>
         <td><?=$cliente['cep'] ?></td>
         <td><?=$cliente['endereco'] ?></td>
         <td><?=$cliente['bairro'] ?></td>
