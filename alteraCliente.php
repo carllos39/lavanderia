@@ -16,9 +16,9 @@ $estado=$_POST['estado'];
 $telefone=$_POST['telefone'];
 $assunto=$_POST['assunto'];
 $mensagem=$_POST['mensagem'];
-if(inserirCliente($conexao,$id,$nome,$email,$nascimento,$cep,$endereco,$bairro,$cidade,$estado,$telefone,$assunto,$mensagem)){
-    echo"Cadastrado com sucesso!";
+if(alteraCliente($conexao,$id,$nome,$email,$nascimento,$cep,$endereco,$bairro,$cidade,$estado,$telefone,$assunto,$mensagem)){
+    echo"Alterado com sucesso!";
 }else{
-    echo"Não cadastrou!";
+    echo"Não alterou!";
 }
 ?>
