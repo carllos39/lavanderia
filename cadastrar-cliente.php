@@ -6,7 +6,7 @@ include("lavanderia-controle.php");
 <?php 
 $nome=$_POST['nome'];
 $email=$_POST['email'];
-$nascimento = date('Y-m-d', strtotime($_POST["nascimento"]));
+$nascimento = $_POST["nascimento"];
 $cep=$_POST['cep'];
 $endereco=$_POST['endereco'];
 $bairro=$_POST['bairro'];
@@ -15,9 +15,17 @@ $estado=$_POST['estado'];
 $telefone=$_POST['telefone'];
 $assunto=$_POST['assunto'];
 $mensagem=$_POST['mensagem'];
-if(inserirCliente($conexao,$nome,$email,$nascimento,$cep,$endereco,$bairro,$cidade,$estado,$telefone,$assunto,$mensagem)){
-    echo"Cadastrado com sucesso!";
-}else{
-    echo"Não cadastrou!";
-}
+
+// echo $nascimento; // 2020-03-15
+// die();
+
+ if(inserirCliente($conexao,$nome,$email,$nascimento,$cep,$endereco,$bairro,$cidade,$estado,$telefone,$assunto,$mensagem)){
+     echo"Cadastrado com sucesso!";
+ }else{
+     echo"Não cadastrou!";
+ }
+
+//inserirCliente($conexao,$nome,$email,$nascimento,$cep,$endereco,$bairro,$cidade,$estado,$telefone,$assunto,$mensagem);
+
+//header("location:index.html");
 ?>
