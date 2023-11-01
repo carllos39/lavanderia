@@ -6,7 +6,7 @@ include("lavanderia-controle.php");
 <?php 
 $nome=$_POST['nome'];
 $email=$_POST['email'];
-$nascimento=$_POST['nascimento'];
+$nascimento = date('Y-m-d', strtotime($_POST["nascimento"]));
 $cep=$_POST['cep'];
 $endereco=$_POST['endereco'];
 $bairro=$_POST['bairro'];
